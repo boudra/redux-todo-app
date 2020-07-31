@@ -6,7 +6,7 @@ function TodoList({ todos, toggleTodo }) {
     <ul>
       {todos.map((todo, index) => (
         <li>
-          <input type="checkbox" onClick={e => toggleTodo(index)} value={completed} />
+          <input type="checkbox" onClick={e => toggleTodo(index)} value={todo.completed} />
           <p>{todo.text}</p>
         </li>
       ))}
